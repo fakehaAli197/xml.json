@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dic, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 p-5">
+        <h1 class="text-center p-3">detail page</h1>
+        <div class="row justify-content-around text-justify" id="productDetail">
+
+        </div>
+
+        
+        
+    </div>
+    <script src="/jquery-3.7.1.min.js"></script>
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script>
+        let url = location.href ;
+        console.log(url);
+        let urlObj = new URL(url);
+        console.log(urlObj);
+        let productImage = urlObj.searchParams.get('pImage');
+        let productName = urlObj.searchParams.get('pName');
+        let productPrice = urlObj.searchParams.get('pPrice');
+        let productDes = urlObj.searchParams.get('pDes');
+
+        $("#productDetail").html(
+            `<div class="col-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="`+productImage+`" alt="Title" />
+                </div>
+                  </div>  
+               
+                <div class="col-md-6">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h4 class="card-title">`+productName+`</h4>
+                            <p class="card-text pt-5">`+productDes+`</p>
+                            <p class="card-text pt-2">`+productPrice+`</p>
+                            <button class="btn btn-primary">add to cart</buttton>
+                        </div>
+                        </div>
+                    </div>`
+
+        )
+    </script>
+</body>
+</html>

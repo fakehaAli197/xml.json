@@ -1,0 +1,64 @@
+<aptech xmlns:s1= "https//abc.com" xmlns:s2="https//xyz.com" xmlns:s3="https//ghz.com" xmlns:s4="https//rty.com" xmlns:s5="https//uio.com">
+<students>
+    <s1:student>
+        <s1:id>1</s1:id>
+        <s1:name>zoha</s1:name>
+        <s1:course>Cpism</s1:course>
+    </s1:student>
+    <s2:student>
+        <s2:id>2</s2:id>
+        <s2:name>ali</s2:name>
+        <s2:course>Dism</s2:course>
+    </s2:student>
+    <s3:student>
+        <s3:id>3</s3:id>
+        <s3:name>arham</s3:name>
+        <s3:course>Dism</s3:course>
+    </s3:student>
+    <s4:student>
+        <s4:id>4</s4:id>
+        <s4:name>rameen</s4:name>
+        <s4:course>Cpism</s4:course>
+    </s4:student>
+    <s5:student>
+        <s5:id>5</s5:id>
+        <s5:name>huzaifa</s5:name>
+        <s5:course>Dism</s5:course>
+    </s5:student>
+</students> 
+    <sro>
+        <srm>
+            <id>1</id>
+            <name>sir atif </name>
+            <role>manager</role>
+        </srm>
+    </sro>
+    <sro>
+        <srm>
+            <id>2</id>
+            <name>miss aqsa </name>
+            <role>manager</role>
+        </srm>
+    </sro>
+    <sro>
+        <srm>
+            <id>3</id>
+            <name>miss mahzaib </name>
+            <role>manager</role>
+        </srm>
+    </sro>
+    <sro>
+        <srm>
+            <id>4</id>
+            <name>sir hamza </name>
+            <role>manager</role>
+        </srm>
+    </sro>
+    <sro>
+        <srm>
+            <id>5</id>
+            <name>sir adnan </name>
+            <role>manager</role>
+        </srm>
+    </sro>
+</aptech>
