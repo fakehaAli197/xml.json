@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<xs:element name="aptech">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"></xs:element>
+                        <xs:element name="studentName" type="xs:string"></xs:element>
+                        <xs:element name="email" xsi:type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sro">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"></xs:element>
+                        <xs:element name="name" type="xs:string"></xs:element>
+                        <xs:element name="role" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
