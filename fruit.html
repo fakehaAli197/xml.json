@@ -1,0 +1,21 @@
+<script>
+    class fruit{
+            name ;
+            taste ;
+            color ;
+             constructor(sName ,sTaste ,sColor){
+                this.name = sName ;
+                this.taste = sTaste ;
+                this.color = sColor ;
+        eat(){
+            console.log(this.name + "eat" + this.taste);
+        }
+        taste(){
+            console.log(this.name + "taste" + this.color);
+        }
+    }
+    let std1 = new fruit('Ali' , 'red' , 'bitter');
+    std1.color();
+    let std2 = new fruit('aqsa' , 'yellow' , 'sweet');
+    std2.taste();
+</script>
