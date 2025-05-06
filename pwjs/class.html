@@ -1,0 +1,33 @@
+<!-- <script>
+    class human{
+        constructor(name , age){
+            console.log(name, age);
+
+        }
+
+    }
+</script> -->
+<script>
+     class Human{
+        name ;
+        food ;
+        lang ;
+         constructor(sName ,sFood ,sLang){
+            this.name = sName ;
+            this.food = sFood ;
+            this.lang = sLang ;
+         }
+        eat(){
+            console.log(this.name + "eats" + this.food);
+        }
+        speak(){
+            console.log(this.name + "speak" + this.lang);
+        }
+     }
+
+     let std1 = new Human('Ali' , 'Biryani' , 'English');
+     std1.eat();
+     let std2 = new Human('aqsa' , 'Daal chawal');
+     std2.eat();
+
+</script>
