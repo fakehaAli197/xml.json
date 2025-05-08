@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>RE</title>
+</head>
+<body>
+     <div class="container p-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                name=""
+                id="userName"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId" class="text-danger"></small>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input
+                type="text"
+                name=""
+                id="usereEmail"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId" class=""></small>
+        </div>
+         <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input
+                type="text"
+                name=""
+                id="userPassword"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId" class=""></small>
+        </div>
+         <div class="mb-3">
+            <label for="" class="form-label">Confirm password</label>
+            <input
+                type="text"
+                name=""
+                id="userConfirm password"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId" class=""></small>
+        </div>
+        <button class="btn btn-info">Add</button>
+     </div>
+     <script src="jquery/jquery-3.7.1.min.js"></script>
+   <script src="bootstrap-5.0.2-dist/css/bootstrap.min.css"></script>
+   <script>
+    $("#userName").keyup(function(){
+        let uName = $(this).val();
+        let uNameRE =/^[a-zA-Z\s]{3,10}$/;
+        if(!uNameRE.test(uName)){
+            $(this).css('border','2px solid red');
+            $(this).next('small').show().text('please Enter Valid Name');
+        }
+        else{
+            $(this).css('border','2px solid green');
+            $(this).next('small').hide();
+        }
+    })
+   </script>
+</body>
+</html>
